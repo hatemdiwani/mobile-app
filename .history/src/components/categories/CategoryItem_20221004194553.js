@@ -1,0 +1,13 @@
+import React from 'react'
+
+const CategoryItem = () => {
+  return (
+    <View>
+
+    </View>
+  )
+}
+
+const styles = Stylesh
+
+export default CategoryItem

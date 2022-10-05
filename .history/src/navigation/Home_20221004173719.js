@@ -1,0 +1,23 @@
+import React from 'react'
+
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import Acceuil from '../screens/Home/Home'
+import { SafeAreaView, Text, View } from 'react-native';
+
+
+
+const Stack = createNativeStackNavigator();
+const Home = () => {
+    return (
+        <SafeAreaView style={{ flex: 1 }}>
+            <NavigationContainer>
+                <Stack.Navigator initialRouteName="Home">
+                    <Stack.Screen name="Home" component={Acceuil} />
+                </Stack.Navigator>
+            </NavigationContainer>
+        </SafeAreaView>
+    )
+}
+
+export default Home
